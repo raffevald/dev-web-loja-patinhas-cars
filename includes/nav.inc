@@ -12,8 +12,8 @@
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">Entrar</button>
-        <button type="button" class="btn btn-primary">Registre-se-up</button>
+        <button onclick="window.location.href = './login.php'" type="button" class="btn btn-outline-primary me-2">Entrar</button>
+        <button type="button" class="btn btn-primary">Registre-se</button>
       </div>
     </header>
 </div>

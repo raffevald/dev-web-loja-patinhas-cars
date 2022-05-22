@@ -1,0 +1,12 @@
+.forme-container {
+    width: 500px;
+    margin: auto;
+
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    background-color: aliceblue;
+    padding: 40px;
+    box-shadow: 2pt;
+    border-radius: 5%;
+}
