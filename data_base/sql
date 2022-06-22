@@ -1,0 +1,19 @@
+CREATE DATABASE lojacarros;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    u_id int(11) NOT NULL AUTO_INCREMENT,
+    u_usuario varchar(60) NOT NULL DEFAULT '',
+    u_senha varchar(255) NOT NULL DEFAULT '',
+    u_nome varchar(100) NOT NULL DEFAULT '',
+    u_sobrenome varchar(250) NOT NULL DEFAULT '',
+    u_email varchar(100) NOT NULL DEFAULT '',
+    u_datareg datetime NOT NULL,
+    u_cat char(1) NOT NULL DEFAULT 'u',
+    u_avatar varchar(250) NOT NULL,
+    PRIMARY KEY (u_id),
+    KEY u_login (u_usuario),
+    KEY u_nome (u_nome),
+    KEY u_email (u_email),
+    KEY u_sobrenome (u_sobrenome)
+)
+ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
