@@ -13,7 +13,7 @@
 
       <div class="col-md-3 text-end">
         <button onclick="window.location.href = './login.php'" type="button" class="btn btn-outline-primary me-2">Entrar</button>
-        <button type="button" class="btn btn-primary">Registre-se</button>
+        <button onclick="window.location.href = './registre.php'" type="button" class="btn btn-primary">Registre-se</button>
       </div>
     </header>
 </div>
