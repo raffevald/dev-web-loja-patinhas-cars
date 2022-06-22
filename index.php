@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-  <?php
-    include './includes/head.inc';
-  ?>
+  <?php include './includes/header.inc'; ?>
 
   <body>
-    <div>
-      <?php
-        include './includes/nav.inc';
-      ?>
+    <div class="container">
+      <?php include './includes/nav.inc'; ?>
+      <p> Esteé o sistema que mostras os carros da loja </p>
     </div>
-
-    <main>
-
-    </main>
 
   </body>
 
-  <?php
-    include './includes/foot.inc';
-  ?>
+  <?php include './includes/foot.inc'; ?>
 </html>
