@@ -17,3 +17,62 @@ CREATE TABLE IF NOT EXISTS usuarios (
     KEY u_sobrenome (u_sobrenome)
 )
 ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+
+
+
+(na base de dados lojacarros)
+DROP TABLE IF EXISTS carros;
+CREATE TABLE IF NOT EXISTS carros (
+id_carro int(11) NOT NULL AUTO_INCREMENT,
+marca int(11) NOT NULL,
+modelo varchar(40) COLLATE utf8_unicode_ci NOT NULL,
+descricao varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+mod_fab varchar(9) COLLATE utf8_unicode_ci NOT NULL,
+cor varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+placa varchar(9) COLLATE utf8_unicode_ci NOT NULL,
+valor varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+PRIMARY KEY (id_carro)
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+INSERT INTO carros (id_carro , marca , modelo , descricao , mod_fab , cor , placa , valor ) VALUES
+(1, 27, 'Fusca', '2portas gasolina', '1970/1971', 'vermelho', 'GFR4323', 'R$5.000,00'),
+(2, 26, 'Corola', '1.8 SE-G 16V FLEX 4P AUTOMÁTICO', '2007/2008', 'preto', 'KZY4838', 'R$38.000,00'),
+(3, 27, 'Fusca', '2P GASOLINA', '1968/1968', 'vermelho', 'GTR5434', 'R$ 5.000,00'),
+(4, 7, 'EcoSport', '4P Flex', '2019/2019', 'prata', 'GHT5433', 'R$ 80.000,00'),
+(5, 27, 'Fusca', '2portas', '1968/1968', 'vermelho', 'GHTR5435', 'R$ 5.000,00');
+
+CREATE TABLE IF NOT EXISTS marcas (
+ id_marca int(11) NOT NULL AUTO_INCREMENT,
+ desc_marca varchar(30) NOT NULL,
+PRIMARY KEY ( id_marca )
+) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
+
+INSERT INTO marcas ( id_marca , desc_marca ) VALUES
+(1, 'Audi'),
+(2, 'BMW'),
+(3, 'Caoa Chery'),
+(4, 'Citroen'),
+(5, 'Dodge'),
+(6, 'Fiat'),
+(7, 'Ford'),
+(8, 'GM-Chevrolet'),
+(9, 'Honda'),
+(10, 'Hyundai'),
+(11, 'Iveco'),
+(12, 'JAC'),
+(13, 'Jaguar'),
+(14, 'Jeep'),
+(15, 'Kia'),
+(16, 'Land Rover'),
+(17, 'Lexus'),
+(18, 'Mercedes'),
+(19, 'Mitsubishi'),
+(20, 'Nissan'),
+(21, 'Peugeot'),
+(22, 'Porsche'),
+(23, 'Renault'),
+(24, 'Subaru'),
+(25, 'Suzuki'),
+(26, 'Toyota'),
+(27, 'Volkswagen'),
+(28, 'Volvo')
