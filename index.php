@@ -2,16 +2,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Loja de Carros - Kingdom Multimarcas">
-  <meta name="author" content="Weslayne Kalline">
+  <meta name="description" content="Loja de Carros - Patinhas Cars">
+  <meta name="author" content="Raff Evald">
   <meta name="generator" content="Hugo 0.88.1">
-  <title>Loja de Carros - Kingdom Multimarcas</title>
+  <title>Loja de Carros - Patinhas Cars</title>
 </head>
 
 <?php
-session_start();
-include "UI_include.php";
-include INC_DIR . 'header.inc';
+  session_start();
+  include "UI_include.php";
+  include INC_DIR . 'header.inc';
 ?>
 
 <body>
