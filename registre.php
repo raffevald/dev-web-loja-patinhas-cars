@@ -117,7 +117,7 @@
         ('$novousuario', '$encrypted_minhasenha', '$nome', '$sobrenome', '$email', '$hoje', 'u', 'avatar.jpg')";
         
         // Imprimir a query em tela para verificação
-        echo ($query . '<br>');
+        // echo ($query . '<br>');
         include 'conecta_mysqli.inc';
         $resultado = mysqli_query($conexao, $query);
         $linhasafetadas = mysqli_affected_rows($conexao);
@@ -139,7 +139,7 @@
                 $msg = "USUÁRIO CRIADO COM SUCESSO.";
 
                 // direciona para a página inicial dos usuários cadastrados
-                header("Location: login.php?new=1");
+                // header("Location: login.php?new=1");
                 exit();
             } else {
                 echo "<script language=javascript>confirm( 'Erro ao registrar o usuário na base de dados.' );</script>";
