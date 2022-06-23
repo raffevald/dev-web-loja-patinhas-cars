@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="Raff Evald">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Tio Patinhas Cars</title>
+    <title>Loja de Carros - Patinhas Cars</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">

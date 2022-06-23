@@ -18,9 +18,12 @@ CREATE TABLE IF NOT EXISTS usuarios (
 )
 ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS marcas (
+ id_marca int(11) NOT NULL AUTO_INCREMENT,
+ desc_marca varchar(30) NOT NULL,
+PRIMARY KEY ( id_marca )
+) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
 
-
-(na base de dados lojacarros)
 DROP TABLE IF EXISTS carros;
 CREATE TABLE IF NOT EXISTS carros (
 id_carro int(11) NOT NULL AUTO_INCREMENT,
@@ -34,6 +37,14 @@ valor varchar(20) COLLATE utf8_unicode_ci NOT NULL,
 PRIMARY KEY (id_carro)
 ) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+CREATE TABLE IF NOT EXISTS fotos (
+ f_id int(11) NOT NULL AUTO_INCREMENT,
+ f_carro int(11) NOT NULL,
+ f_imagem varchar(60) NOT NULL,
+ f_destaque tinyint(1) NOT NULL,
+PRIMARY KEY ( f_id )
+) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+
 INSERT INTO carros (id_carro , marca , modelo , descricao , mod_fab , cor , placa , valor ) VALUES
 (1, 27, 'Fusca', '2portas gasolina', '1970/1971', 'vermelho', 'GFR4323', 'R$5.000,00'),
 (2, 26, 'Corola', '1.8 SE-G 16V FLEX 4P AUTOMÁTICO', '2007/2008', 'preto', 'KZY4838', 'R$38.000,00'),
@@ -41,11 +52,6 @@ INSERT INTO carros (id_carro , marca , modelo , descricao , mod_fab , cor , plac
 (4, 7, 'EcoSport', '4P Flex', '2019/2019', 'prata', 'GHT5433', 'R$ 80.000,00'),
 (5, 27, 'Fusca', '2portas', '1968/1968', 'vermelho', 'GHTR5435', 'R$ 5.000,00');
 
-CREATE TABLE IF NOT EXISTS marcas (
- id_marca int(11) NOT NULL AUTO_INCREMENT,
- desc_marca varchar(30) NOT NULL,
-PRIMARY KEY ( id_marca )
-) ENGINE=MyISAM AUTO_INCREMENT=62 DEFAULT CHARSET=utf8;
 
 INSERT INTO marcas ( id_marca , desc_marca ) VALUES
 (1, 'Audi'),
